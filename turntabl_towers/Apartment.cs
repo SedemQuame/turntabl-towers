@@ -8,24 +8,26 @@ namespace turntabl_towers
     {
         int floorNumber;
         string doorNumber;
-        string apartmentType;
         List<Person> listOfResidents;
-        Bell doorBell;
+        Bell doorBell ;
 
         //constructor
-        protected Apartment(int floorNumber, string doorNumber, string apartmentType, List<Person> listOfResidents, Bell doorBell)
+        protected Apartment(int floorNumber, string doorNumber, List<Person> listOfResidents)
         {
             this.floorNumber = floorNumber;
             this.doorNumber = doorNumber;
-            this.apartmentType = apartmentType;
             this.listOfResidents = listOfResidents;
-            this.doorBell = doorBell;
+            this.doorBell = new Bell();
         }
+
+        abstract public void constructApartment();
 
         //tostring
         public override string ToString()
         {
             return base.ToString();
         }
+
+        abstract public bool respondToBell();
     }
 }

@@ -6,7 +6,11 @@ namespace turntabl_towers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello World!");
+
+            //Constructing turntabl towers, achimota branch.
+            Tower turntabl = new Tower("Turntabl Towers", "Achimota");
+
         }
     }
 }

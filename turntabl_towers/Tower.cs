@@ -8,23 +8,37 @@ namespace turntabl_towers
     {
         string blockName;
         string blockLocation;
-        int numberOfFloors;
+        static int numberOfFloors = 12;
         //Collections
-        List<Floor> floorList = new List<Floor>();
+        List<Floor> floorList;
 
         //Accessors
         public string BlockName { get => blockName; set => blockName = value; }
         public string BlockLocation { get => blockLocation; set => blockLocation = value; }
         public int NumberOfFloors { get => numberOfFloors; set => numberOfFloors = value; }
+        internal List<Floor> FloorList { get => floorList; set => floorList = value; }
+
 
         //Constructor
-        public Tower(string blockName, string blockLocation, int numberOfFloors, List<Floor> floorList)
+        public Tower(string blockName, string blockLocation)
         {
             this.blockName = blockName;
             this.blockLocation = blockLocation;
-            this.numberOfFloors = numberOfFloors;
-            this.floorList = floorList;
+            //create turntabl floors
+            this.constructFloors();
         }
+        void constructFloors()
+        {
+            this.floorList = new List<Floor>(numberOfFloors);
+            //creating n number of floors.
+
+            for (int i = 0; i < numberOfFloors; i++)
+            {
+                //Floor numbers start from 0 to 11.
+                floorList.Add(new Floor(i));
+            }
+        }
+
 
         public override string ToString()
         {
