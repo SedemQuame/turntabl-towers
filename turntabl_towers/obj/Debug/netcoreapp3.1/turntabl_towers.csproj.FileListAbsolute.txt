@@ -1,0 +1,13 @@
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\bin\Debug\netcoreapp3.1\turntabl_towers.exe
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\bin\Debug\netcoreapp3.1\turntabl_towers.deps.json
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\bin\Debug\netcoreapp3.1\turntabl_towers.runtimeconfig.json
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\bin\Debug\netcoreapp3.1\turntabl_towers.runtimeconfig.dev.json
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\bin\Debug\netcoreapp3.1\turntabl_towers.dll
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\bin\Debug\netcoreapp3.1\turntabl_towers.pdb
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\obj\Debug\netcoreapp3.1\turntabl_towers.csprojAssemblyReference.cache
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\obj\Debug\netcoreapp3.1\turntabl_towers.AssemblyInfoInputs.cache
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\obj\Debug\netcoreapp3.1\turntabl_towers.AssemblyInfo.cs
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\obj\Debug\netcoreapp3.1\turntabl_towers.csproj.CoreCompileInputs.cache
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\obj\Debug\netcoreapp3.1\turntabl_towers.dll
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\obj\Debug\netcoreapp3.1\turntabl_towers.pdb
+C:\Users\TURNTABL\Documents\C#\turntabl_towers\turntabl_towers\obj\Debug\netcoreapp3.1\turntabl_towers.genruntimeconfig.cache

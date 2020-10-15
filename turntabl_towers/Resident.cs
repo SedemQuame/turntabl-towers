@@ -6,6 +6,8 @@ namespace turntabl_towers
 {
     class Resident:Person
     {
+        //? why did i add residence in the first place
+        //(¬_¬ )(¬_¬ )(¬_¬ )
         string residence;
 
         public string Residence { get => residence; set => residence = value; }

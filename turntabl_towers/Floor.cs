@@ -11,11 +11,9 @@ namespace turntabl_towers
         List<Apartment> apartmentList;
         static int numberOfApartmentsPerFloor = 6;
 
-
         //Accessors
         public int FloorNumber { get => floorNumber; set => floorNumber = value; }
         public List<Apartment> ApartmentList { get => apartmentList; set => apartmentList = value; }
-
 
         //Constructor
         public Floor(int floorNumber)
@@ -36,11 +34,12 @@ namespace turntabl_towers
                 int rndValue = rnd.Next(minValue, maxValue);
 
                 if (rndValue < 6)
-                    apartmentList.Add(new Basic(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), )
-                        else if()
+                    apartmentList.Add(new Basic(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), new List<Person>()));
+                else if (rndValue < 9)
+                    apartmentList.Add(new Silver(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), new List<Person>()));
+                else
+                    apartmentList.Add(new Grand(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), new List<Person>()));
             }
-
-
         }
     }
 }
