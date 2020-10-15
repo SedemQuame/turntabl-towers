@@ -9,11 +9,11 @@ namespace turntabl_towers
         int floorNumber;
         string doorNumber;
         string apartmentType;
-        List<Resident> listOfResidents;
+        List<Person> listOfResidents;
         Bell doorBell;
 
         //constructor
-        protected Apartment(int floorNumber, string doorNumber, string apartmentType, List<Resident> listOfResidents, Bell doorBell)
+        protected Apartment(int floorNumber, string doorNumber, string apartmentType, List<Person> listOfResidents, Bell doorBell)
         {
             this.floorNumber = floorNumber;
             this.doorNumber = doorNumber;
