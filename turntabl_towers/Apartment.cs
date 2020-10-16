@@ -8,6 +8,7 @@ namespace turntabl_towers
     {
         int floorNumber;
         string doorNumber;
+        string apartmentType;
         List<Person> listOfResidents;
         Bell doorBell ;
 
@@ -16,12 +17,14 @@ namespace turntabl_towers
         public string DoorNumber { get => doorNumber; set => doorNumber = value; }
         internal List<Person> ListOfResidents { get => listOfResidents; set => listOfResidents = value; }
         internal Bell DoorBell { get => doorBell; set => doorBell = value; }
+        public string ApartmentType { get => apartmentType; set => apartmentType = value; }
 
         //constructor
-        protected Apartment(int floorNumber, string doorNumber, List<Person> listOfResidents)
+        protected Apartment(int floorNumber, string doorNumber, string apartmentType, List<Person> listOfResidents)
         {
             this.FloorNumber = floorNumber;
             this.DoorNumber = doorNumber;
+            this.ApartmentType = apartmentType;
             this.ListOfResidents = listOfResidents;
             this.DoorBell = new Bell();
         }
@@ -54,6 +57,11 @@ namespace turntabl_towers
             }
 
             return residentList;
+        }
+
+        public string getApartmentType()
+        {
+            return this.ApartmentType;
         }
     }
 }

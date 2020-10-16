@@ -7,21 +7,21 @@ namespace turntabl_towers
     class Grand:Apartment
     {
         static bool respondToDoorBell = true;
-        static string apartmentType = "Grand";
+        //static string apartmentType = "Grand";
 
         //Accessors
         public static bool RespondToDoorBell { get => respondToDoorBell; set => respondToDoorBell = value; }
-        public string ApartmentType { get => apartmentType; set => apartmentType = value; }
+        //public string ApartmentType { get => apartmentType; set => apartmentType = value; }
 
         //Constructor
-        public Grand(int floorNumber, string doorNumber, List<Person> listOfResidents):base(floorNumber, doorNumber, listOfResidents)
+        public Grand(int floorNumber, string doorNumber, string apartmentType, List<Person> listOfResidents):base(floorNumber, doorNumber, apartmentType, listOfResidents)
         {
             listOfResidents.Add(new Butler("Alfred (Batman)", "Butler", "apartment#"));
         }
 
         public override bool respondToBell()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public override void constructApartment()

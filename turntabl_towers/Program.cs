@@ -8,7 +8,7 @@ namespace turntabl_towers
         static void Main(string[] args)
         {
             //Console.WriteLine("Hello World!");
-            string[] nameList = {"Sophie"};
+            //string[] nameList = {"Sophie"};
 
 
             //Constructing turntabl towers, achimota branch.

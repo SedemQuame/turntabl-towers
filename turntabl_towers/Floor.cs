@@ -37,20 +37,20 @@ namespace turntabl_towers
 
                 if (rndValue < 6)
                 {
-                    apartmentList.Add(new Basic(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), new List<Person>()));
+                    apartmentList.Add(new Basic(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), "Basic ",  new List<Person>()));
                     denotation = "B";
                 }
                 else if (rndValue < 9)
                 {
-                    apartmentList.Add(new Silver(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), new List<Person>()));
+                    apartmentList.Add(new Silver(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), "Silver", new List<Person>()));
                     denotation = "S";
                 }
                 else
                 {
-                    apartmentList.Add(new Grand(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), new List<Person>()));
+                    apartmentList.Add(new Grand(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), "Grand ", new List<Person>()));
                     denotation = "G";
                 }
-                Console.Write($"| {denotation} |");
+                Console.Write($"| {denotation}-{(this.floorNumber.ToString() + i.ToString())} |");
             }
         }
     }

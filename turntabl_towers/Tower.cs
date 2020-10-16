@@ -56,9 +56,9 @@ namespace turntabl_towers
 
         public void takeTheRegister()
         {
-            Console.WriteLine("==================================================================================");
-            Console.WriteLine("|Apartment #      |   Type   |     Residents                                      ");
-            Console.WriteLine("==================================================================================");
+            Console.WriteLine("=========================================================================================");
+            Console.WriteLine("|Apartment #      |   Type         |     Residents                                       ");
+            Console.WriteLine("=========================================================================================");
             int i = 0;
             foreach (Floor floor in this.FloorList)
             {
@@ -66,9 +66,9 @@ namespace turntabl_towers
                 {
                     i++;
                     if(i < 10)
-                        Console.WriteLine($"|#{i}               |          |    {apartment.currentResidents()}                                      ");
+                        Console.WriteLine($"|#{i}               |{apartment.ApartmentType}          |    {apartment.currentResidents()}                                      ");
                     else
-                        Console.WriteLine($"|#{i}              |          |    {apartment.currentResidents()}                                      ");
+                        Console.WriteLine($"|#{i}              |{apartment.ApartmentType}          |    {apartment.currentResidents()}                                      ");
 
                     Console.WriteLine("----------------------------------------------------------------------------------");
                 }
@@ -77,6 +77,7 @@ namespace turntabl_towers
 
         public void ringAllDoorbells()
         {
+            Console.WriteLine("\n\n**** Ringing a Bell ****\n");
 
         }
 

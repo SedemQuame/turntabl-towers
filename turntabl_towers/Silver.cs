@@ -6,17 +6,24 @@ namespace turntabl_towers
 {
     class Silver : Apartment
     {
-        static string apartmentType = "Silver";
+        //static string apartmentType = "Silver";
 
-        public static string ApartmentType { get => apartmentType; set => apartmentType = value; }
+        //public static string ApartmentType { get => apartmentType; set => apartmentType = value; }
 
-        public Silver(int floorNumber, string doorNumber, List<Person> listOfResidents) : base(floorNumber, doorNumber, listOfResidents)
+        public Silver(int floorNumber, string doorNumber, string apartmentType, List<Person> listOfResidents) : base(floorNumber, doorNumber, apartmentType, listOfResidents)
         {
+            //apartmentType = "Silver";
         }
 
         public override bool respondToBell()
         {
-            throw new NotImplementedException();
+            /*refactor code to be used across the 3 instances of apartment*/
+            //respond to bell ring event 10% of the time.
+            int minValue = 0, maxValue = 10;
+            Random rnd = new Random();
+            int rndValue = rnd.Next(minValue, maxValue);
+
+            return (rndValue <= 8);
         }
 
         public override void constructApartment()
