@@ -33,7 +33,6 @@ namespace turntabl_towers
                 base.ListOfResidents.Add(new Resident("resident_name", "engineer", "residence"));
 
             }
-            throw new NotImplementedException();
         }
     }
 }

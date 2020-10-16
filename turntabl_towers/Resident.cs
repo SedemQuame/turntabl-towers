@@ -17,7 +17,7 @@ namespace turntabl_towers
             Residence = residence;
         }
 
-        public override void answerDoorBell()
+        public void answerDoorBell()
         {
             throw new NotImplementedException();
         }

@@ -19,6 +19,7 @@ namespace turntabl_towers
         public Floor(int floorNumber)
         {
             this.floorNumber = floorNumber;
+            //Console.WriteLine("Apartments.");
             this.constructApartments();
         }
 
@@ -32,13 +33,24 @@ namespace turntabl_towers
             {
                 Random rnd = new Random();
                 int rndValue = rnd.Next(minValue, maxValue);
+                string denotation = "";
 
                 if (rndValue < 6)
+                {
                     apartmentList.Add(new Basic(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), new List<Person>()));
+                    denotation = "B";
+                }
                 else if (rndValue < 9)
+                {
                     apartmentList.Add(new Silver(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), new List<Person>()));
+                    denotation = "S";
+                }
                 else
+                {
                     apartmentList.Add(new Grand(this.floorNumber, (this.floorNumber.ToString() + i.ToString()), new List<Person>()));
+                    denotation = "G";
+                }
+                Console.Write($"| {denotation} |");
             }
         }
     }

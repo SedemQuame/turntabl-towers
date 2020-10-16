@@ -13,7 +13,7 @@ namespace turntabl_towers
             this.apartmentNumber = apartmentNumber;
         }
 
-        public override void answerDoorBell()
+        public void answerDoorBell()
         {
             throw new NotImplementedException();
         }

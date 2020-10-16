@@ -15,8 +15,6 @@ namespace turntabl_towers
             this.jobType = jobType;
         }
 
-        //use events here.
-        abstract public void answerDoorBell();
 
         //return greeting.
         abstract public string greeting();
