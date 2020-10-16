@@ -11,12 +11,17 @@ namespace turntabl_towers
 
         protected Person(string name, string jobType)
         {
-            this.name = name;
-            this.jobType = jobType;
+            this.Name = name;
+            this.JobType = jobType;
         }
+
+        public string Name { get => name; set => name = value; }
+        public string JobType { get => jobType; set => jobType = value; }
 
 
         //return greeting.
         abstract public string greeting();
+
+        
     }
 }

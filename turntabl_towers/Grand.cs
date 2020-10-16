@@ -11,12 +11,12 @@ namespace turntabl_towers
 
         //Accessors
         public static bool RespondToDoorBell { get => respondToDoorBell; set => respondToDoorBell = value; }
-        public static string ApartmentType { get => apartmentType; set => apartmentType = value; }
+        public string ApartmentType { get => apartmentType; set => apartmentType = value; }
 
         //Constructor
-        public Grand(int floorNumber, string doorNumber, List<Person> listOfResidents) :base(floorNumber, doorNumber, listOfResidents)
+        public Grand(int floorNumber, string doorNumber, List<Person> listOfResidents):base(floorNumber, doorNumber, listOfResidents)
         {
-            listOfResidents.Add(new Butler("name", "job_type", "apartment#"));
+            listOfResidents.Add(new Butler("Alfred (Batman)", "Butler", "apartment#"));
         }
 
         public override bool respondToBell()
@@ -43,5 +43,6 @@ namespace turntabl_towers
 
             throw new NotImplementedException();
         }
+
     }
 }

@@ -54,12 +54,25 @@ namespace turntabl_towers
             Console.WriteLine("Hiring a team of super duper concierge personnel");
         }
 
-        public string takeTheRegister()
+        public void takeTheRegister()
         {
+            Console.WriteLine("==================================================================================");
+            Console.WriteLine("|Apartment #      |   Type   |     Residents                                      ");
+            Console.WriteLine("==================================================================================");
+            int i = 0;
+            foreach (Floor floor in this.FloorList)
+            {
+                foreach (var apartment in floor.ApartmentList)
+                {
+                    i++;
+                    if(i < 10)
+                        Console.WriteLine($"|#{i}               |          |    {apartment.currentResidents()}                                      ");
+                    else
+                        Console.WriteLine($"|#{i}              |          |    {apartment.currentResidents()}                                      ");
 
-
-
-            return "";
+                    Console.WriteLine("----------------------------------------------------------------------------------");
+                }
+            }
         }
 
         public void ringAllDoorbells()

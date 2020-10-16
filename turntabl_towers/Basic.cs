@@ -8,6 +8,8 @@ namespace turntabl_towers
     {
         static string apartmentType = "Basic";
 
+        public static string ApartmentType { get => apartmentType; set => apartmentType = value; }
+
         public Basic(int floorNumber, string doorNumber, List<Person> listOfResidents) : base(floorNumber, doorNumber, listOfResidents)
         {
         }

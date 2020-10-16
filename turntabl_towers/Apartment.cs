@@ -37,5 +37,23 @@ namespace turntabl_towers
         abstract public bool respondToBell();
 
         abstract public void populateWithResidents();
+
+        public string currentResidents()
+        {
+            string residentList = "";
+
+            if(ListOfResidents.Count == 0)
+            {
+                residentList = "vacant";
+            }
+            else
+            {
+                ListOfResidents.ForEach(resident => {
+                    residentList += $"{resident.Name} => {resident.JobType}, ";
+                });
+            }
+
+            return residentList;
+        }
     }
 }

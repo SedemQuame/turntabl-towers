@@ -17,6 +17,9 @@ namespace turntabl_towers
             //Hire concierge personnel.
             turntabl.hireConciergePersonnel();
 
+            //Get report of people living in building
+            turntabl.takeTheRegister();
+
         }
     }
 }
